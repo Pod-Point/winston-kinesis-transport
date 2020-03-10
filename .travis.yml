@@ -8,10 +8,10 @@ node_js:
   - "8"
   - "10"
 deploy:
-  - provider: npm
-    email: software@pod-point.com
-    skip_cleanup: true
-    on:
-      branch: master
-      tags: true
-      repo: Pod-Point/winston-kinesis-transport
+  provider: npm
+  edge: true
+  email: software@pod-point.com
+  on:
+    branch: master
+    tags: true
+    repo: Pod-Point/winston-kinesis-transport
