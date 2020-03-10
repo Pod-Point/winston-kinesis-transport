@@ -1,0 +1,18 @@
+language: node_js
+os:
+  - linux
+dist: xenial
+before_script:
+  - npm install jasmine winston
+node_js:
+  - "8"
+  - "10"
+deploy:
+  - provider: npm
+    email: software@pod-point.com
+    skip_cleanup: true
+    api_key: "${NPM_API_KEY}"
+    on:
+      branch: master
+      tags: true
+      repo: Pod-Point/winston-kinesis-transport
