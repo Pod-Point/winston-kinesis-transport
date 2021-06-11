@@ -1,4 +1,4 @@
-const kinesis = require('../src/kinesis.js');
+const kinesis = require('../src/kinesis');
 
 describe('kinesis streamer module', () => {
     pending('comment out this line if you want to really log something');
@@ -9,20 +9,21 @@ describe('kinesis streamer module', () => {
         region: 'eu-west-1',
     });
 
-    it('writes to kinesis', done => {
+    it('writes to kinesis', (done) => {
         const message = {
             timestamp: (new Date()).toISOString(),
             level: 'info',
             message: 'test message',
             channel: 'testing',
-            project: 'winston-kinesis-transport'
+            project: 'winston-kinesis-transport',
         };
 
-        KinesisStreamer.send(JSON.stringify(message)).then(m => {
+        KinesisStreamer.send(JSON.stringify(message)).then((m) => {
             done(m);
-        }, e => {
+        }, (e) => {
+            // eslint-disable-next-line no-console
             console.error(e);
-            done(new Error(`Couldn't send message to Kinesis Data Stream.`));
+            done(new Error("Couldn't send message to Kinesis Data Stream."));
         });
     });
 });

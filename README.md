@@ -1,6 +1,7 @@
-[![Build Status](https://travis-ci.com/Pod-Point/winston-kinesis-transport.svg?branch=master)](https://travis-ci.com/Pod-Point/winston-kinesis-transport)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/pod-point/winston-kinesis-transport/run-tests?label=tests)
 [![NPM version](https://img.shields.io/npm/v/@pod-point/winston-kinesis.svg)](https://npmjs.org/package/@pod-point/winston-kinesis)
 [![NPM downloads](https://img.shields.io/npm/dm/@pod-point/winston-kinesis.svg)](https://npmjs.org/package/@pod-point/winston-kinesis)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 
 # Winston AWS Kinesis Transport
 
@@ -78,7 +79,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## License
 
-The MIT License (MIT). Please see [License File](LICENCE.md) for more information.
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
 ---
 
@@ -86,4 +87,4 @@ The MIT License (MIT). Please see [License File](LICENCE.md) for more informatio
 
 Travel shouldn't damage the earth 🌍
 
-Made with ❤️ at [Pod Point](https://pod-point.com)
+Made with ❤️&nbsp;&nbsp;at [Pod Point](https://pod-point.com)
