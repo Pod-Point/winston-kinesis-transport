@@ -1,6 +1,6 @@
 {
     "name": "@pod-point/winston-kinesis",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "description": "Winston logging transport for logging into Amazon AWS Kinesis Data Stream",
     "main": "src/index.js",
     "scripts": {
@@ -30,22 +30,15 @@
         "winston-transport": "^4.2.0"
     },
     "devDependencies": {
-        "eslint": "^6.8.0",
-        "eslint-config-airbnb": "^18.0.1",
-        "eslint-plugin-import": "^2.20.1",
-        "eslint-plugin-jsx-a11y": "^6.2.3",
-        "eslint-plugin-react": "^7.14.3",
-        "eslint-plugin-react-hooks": "^1.7.0",
+        "eslint": "^7.28.0",
+        "eslint-config-airbnb": "^18.2.1",
+        "eslint-plugin-import": "^2.23.4",
+        "eslint-plugin-jsx-a11y": "^6.4.1",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-promise": "^5.1.0",
         "jasmine": "^2.5.2"
     },
     "peerDependencies": {
         "winston": "^3.1.0"
-    },
-    "eslintConfig": {
-        "extends": "airbnb",
-        "env": {
-            "node": true,
-            "jasmine": true
-        }
     }
 }

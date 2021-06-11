@@ -1,5 +1,8 @@
+/.github
 /node_modules
-/src
+/spec
+.babelrc
+.eslintrc
 .gitignore
-.travis.yml
+.nvmrc
 package-lock.json

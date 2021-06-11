@@ -1,11 +1,14 @@
-[![Build Status](https://travis-ci.org/Pod-Point/winston-kinesis-transport.svg?branch=master)](https://travis-ci.org/Pod-Point/winston-kinesis-transport)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/pod-point/winston-kinesis-transport/run-tests?label=tests)
+[![NPM version](https://img.shields.io/npm/v/@pod-point/winston-kinesis.svg)](https://npmjs.org/package/@pod-point/winston-kinesis)
+[![NPM downloads](https://img.shields.io/npm/dm/@pod-point/winston-kinesis.svg)](https://npmjs.org/package/@pod-point/winston-kinesis)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 
 # Winston AWS Kinesis Transport
 
 NodeJS module, winston logging transport which writes to AWS Kinesis Data Stream.
 
 ## Installation
-[![NPM](https://nodei.co/npm/@pod-point/winston-kinesis.png)](https://npmjs.org/package/@pod-point/winston-kinesis)
+
 ```bash
 npm install @pod-point/winston-kinesis
 ```
@@ -49,18 +52,39 @@ This will write messages as strings (using JSON.stringify) into Kinesis in the f
 };
 ```
 
-## Options
+### Options
 
 `streamName (string) - required` The name of the Kinesis data stream to write to.
 
 `kinesisOptions (object) - optional/suggested` The Kinesis options that are passed directly to the constructor,
  [documented by AWS here](http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/Kinesis.html#constructor-property)
 
-## Details
+### Details
 
 At the moment this logger sends (unacknowledged!) log messages into firehose. Right now the behavior if the log
 message fails to write to Kinesis is simply to do absolutely nothing and fail silently.
 
+## Changelog
+
+Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
+
+## Contributing
+
+Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
+
 ## Credits
 
-Originally forked from [`winston-firehose`](https://github.com/pkallos/winston-firehose).
+- Originally forked from [`winston-firehose`](https://github.com/pkallos/winston-firehose)
+- [Pod Point](https://github.com/pod-point)
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+
+---
+
+<img src="https://d3h256n3bzippp.cloudfront.net/pod-point-logo.svg" align="right" />
+
+Travel shouldn't damage the earth 🌍
+
+Made with ❤️&nbsp;&nbsp;at [Pod Point](https://pod-point.com)

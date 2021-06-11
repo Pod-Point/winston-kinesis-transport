@@ -1,9 +1,9 @@
 const winston = require('winston');
+const KinesisTransport = require('../src/index');
 const MockKinesisStreamer = require('./support/mock-kinesis-streamer');
-const KinesisTransport = require('../src/index.js');
 
-describe('kinesis logger transport', function () {
-    beforeAll(function () {
+describe('kinesis logger transport', () => {
+    beforeAll(() => {
         this.m = new MockKinesisStreamer('some-stream', 'testing', {});
 
         this.message = 'test message';
@@ -11,18 +11,17 @@ describe('kinesis logger transport', function () {
         spyOn(this.m, 'send').and.callThrough();
     });
 
-    it('logs a message', function (done) {
+    it('logs a message', (done) => {
         const { m, message } = this;
 
         m.send(message)
-            .then(response => {
+            .then((response) => {
                 expect(response).toBe(message);
                 done();
-            })
-            .catch(done);
+            }).catch(done);
     });
 
-    it('affixes to winston', function () {
+    it('affixes to winston', () => {
         const { m, message } = this;
 
         m.send.calls.reset();
