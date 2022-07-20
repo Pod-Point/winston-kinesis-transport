@@ -25,7 +25,7 @@
     },
     "homepage": "https://github.com/Pod-Point/winston-kinesis-transport#readme",
     "dependencies": {
-        "aws-sdk": "^2.3.14",
+        "aws-sdk": "^2.1165.0",
         "winston": "^3.2.1",
         "winston-transport": "^4.2.0"
     },
